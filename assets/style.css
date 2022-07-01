@@ -110,8 +110,6 @@ body {
 }
 
 .landing_info {
-  /* z-index: 1; */
-  /* position: absolute; */
   width: 60%;
   margin: 20rem 0 2rem;
   display: flex;
@@ -122,7 +120,7 @@ body {
 }
 
 .coming_week {
-  margin-top: 2rem;
+  margin-top: 5rem;
 }
 
 .coming_header {
@@ -145,8 +143,8 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   color: #fff;
-  gap: 1rem;
-  padding: 0rem;
+  gap: 1.5rem;
+  /* padding: 2rem; */
 }
 
 .movie_item {
@@ -159,7 +157,7 @@ body {
 }
 
 .movie_item_image {
-  width: 232px;
+  width: 190px;
 }
 
 .movie_item_name {
@@ -180,7 +178,7 @@ body {
   font-size: 0.8em;
 }
 
-@media screen and (max-width: 1800px) {
+@media screen and (max-width: 1980px) {
   .landing_img {
     width: 100%;
   }
