@@ -1,0 +1,17 @@
+body {
+  /* background-color: #fff; */
+  /* background-color: #222831 !important; */
+}
+.movie-details {
+  color: #fff !important;
+}
+
+.span-text {
+  color: #00adb5;
+  font-weight: 400;
+}
+
+.book-now-btn {
+  background-color: #00adb5 !important;
+  color: #222831 !important;
+}

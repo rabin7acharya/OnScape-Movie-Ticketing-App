@@ -7,6 +7,7 @@
     <title>OnScape</title>
     <!-- CSS -->
     <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="stylesheet" href="./assets/movieDetails.css">
 
     <!-- Font Awesome -->
     <link
@@ -19,125 +20,169 @@
 
     <!-- Bootstrap -->
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
+    />
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
   </head>
   <body>
-    <nav class="nav_bar">
-      <a href="#">
-        <img src="./assets/onscape.svg" alt="" class="logo" />
-      </a>
-      <div class="search_bar d-none d-sm-none d-md-none d-lg-block">
-        <input
-          class="search_input"
-          type="text"
-          name="search"
-          placeholder="Type to search"
-        />
-        <i class="fa-solid search_icon fa-magnifying-glass"></i>
-      </div>
+    <nav class="nav_bar py-2 d-flex col-12 justify-content-between">
+      <div class="container d-flex justify-content-between align-items-center">
+        <a href="#">
+          <img src="./assets/logo.svg" alt="" class="logo" />
+        </a>
+        <div class="search_bar rounded d-none d-sm-none d-md-none d-lg-block">
+          <input
+            class="search_input px-3"
+            type="text"
+            name="search"
+            placeholder="Type to search"
+          />
+          <i class="fa-solid p-2 search_icon fa-magnifying-glass"></i>
+        </div>
 
-      <div class="login-singup d-none d-sm-none d-md-none d-lg-block">
-        <button class="login_btn">Login</button>
-        <button class="signup_btn">Signup</button>
+        <div class="login-singup d-none d-sm-none d-md-none d-lg-block">
+          <button class="login_btn btn">Login</button>
+          <button class="signup_btn btn">Signup</button>
+        </div>
+        <i class="ham fa-solid fa-bars d-sm-block d-md-block d-lg-none"></i>
       </div>
-      <i class="ham fa-solid fa-bars d-sm-block d-md-block d-lg-none"></i>
     </nav>
-    <section class="landing">
-      <img src="./assets/landing_img.png" alt="" class="landing_img" />
-      <div class="landing_info">
-        <p>Now Showing</p>
-        <h1 class="landing_movie_title">Avatar: The Way of Water</h1>
-        <p class="">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-          repellat impedit harum, excepturi nemo libero culpa, sapiente
-          consequatur dolor voluptates optio, cupiditate mollitia odio. Id,
-          cumque omnis ut qui quia possimus.
-        </p>
-        <button class="btn">Book Now</button>
+    <section class="landing swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="container">
+            <img src="./assets/landing_img.png" alt="" class="landing_img" />
+            <div class="landing_info col-sm-12 col-md-8 col-lg-6">
+              <p>Now Showing</p>
+              <h1 class="landing_movie_title">Avatar: The Way of Water</h1>
+              <p class="">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+                repellat impedit harum, excepturi nemo libero culpa, sapiente
+                consequatur dolor voluptates optio, cupiditate mollitia odio.
+                Id, cumque omnis ut qui quia possimus.
+              </p>
+              <button class="btn btn-light">Book Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="container">
+            <img src="./assets/Earth.png" alt="" class="landing_img" />
+            <div class="landing_info col-sm-12 col-md-8 col-lg-6">
+              <p>Now Showing</p>
+              <h1 class="landing_movie_title">Avatar: The Way of Water</h1>
+              <p class="">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+                repellat impedit harum, excepturi nemo libero culpa, sapiente
+                consequatur dolor voluptates optio, cupiditate mollitia odio.
+                Id, cumque omnis ut qui quia possimus.
+              </p>
+              <button class="btn btn-light">Book Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="container">
+            <img src="./assets/Arcaine.png" alt="" class="landing_img" />
+            <div class="landing_info col-sm-12 col-md-8 col-lg-6">
+              <p>Now Showing</p>
+              <h1 class="landing_movie_title">Avatar: The Way of Water</h1>
+              <p class="">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+                repellat impedit harum, excepturi nemo libero culpa, sapiente
+                consequatur dolor voluptates optio, cupiditate mollitia odio.
+                Id, cumque omnis ut qui quia possimus.
+              </p>
+              <button class="btn btn-light">Book Now</button>
+            </div>
+          </div>
+        </div>
       </div>
+      <div class="swiper-pagination"></div>
     </section>
-    <section class="coming_week">
-      <div class="coming_header">
-        <h3>Coming This Week</h3>
-        <a href="">See All</a>
-      </div>
-      <div class="coming_items">
-        <div class="movie_item">
+    <section class="coming_week mt-5 container">
+      <h5 class="coming_header">Coming This Week</h5>
+      <div class="coming_items row mt-4">
+        <div class="movie_item col-6 col-md-4 col-lg-3 col-xl-2">
           <img
             class="movie_item_image"
             src="https://cdn.shopify.com/s/files/1/0057/3728/3618/products/newmutants.aug28.ar_480x.progressive.jpg?v=1598649867"
             alt=""
           />
-          <h5 class="movie_item_name">Movie Name</h5>
+          <h6 class="movie_item_name my-2">Movie Name</h6>
           <div class="genres">
             <span class="genre">Action</span>
             <span class="genre">Crime</span>
             <span class="genre">Drama</span>
           </div>
         </div>
-        <div class="movie_item">
+        <div class="movie_item col-6 col-md-4 col-lg-3 col-xl-2">
           <img
             class="movie_item_image"
             src="https://cdn.shopify.com/s/files/1/0057/3728/3618/products/rons-gone-wrong_6mrd9trb_480x.progressive.jpg?v=1637342410"
             alt=""
           />
-          <h5 class="movie_item_name">Movie Name</h5>
+          <h6 class="movie_item_name my-2">Movie Name</h6>
           <div class="genres">
             <span class="genre">Action</span>
             <span class="genre">Crime</span>
             <span class="genre">Drama</span>
           </div>
         </div>
-        <div class="movie_item">
+        <div class="movie_item col-6 col-md-4 col-lg-3 col-xl-2">
           <img
             class="movie_item_image"
             src="https://cdn.shopify.com/s/files/1/0057/3728/3618/products/paws-of-fury-the-legend-of-hank_xesf8ont_480x.progressive.jpg?v=1651767929"
             alt=""
           />
-          <h5 class="movie_item_name">Movie Name</h5>
+          <h6 class="movie_item_name my-2">Movie Name</h6>
           <div class="genres">
             <span class="genre">Action</span>
             <span class="genre">Crime</span>
             <span class="genre">Drama</span>
           </div>
         </div>
-        <div class="movie_item">
+        <div class="movie_item col-6 col-md-4 col-lg-3 col-xl-2">
           <img
             class="movie_item_image"
             src="https://cdn.shopify.com/s/files/1/0057/3728/3618/products/newmutants.aug28.ar_480x.progressive.jpg?v=1598649867"
             alt=""
           />
-          <h5 class="movie_item_name">Movie Name</h5>
+          <h6 class="movie_item_name my-2">Movie Name</h6>
           <div class="genres">
             <span class="genre">Action</span>
             <span class="genre">Crime</span>
             <span class="genre">Drama</span>
           </div>
         </div>
-        <div class="movie_item">
+        <div class="movie_item col-6 col-md-4 col-lg-3 col-xl-2">
           <img
             class="movie_item_image"
             src="https://cdn.shopify.com/s/files/1/0057/3728/3618/products/rons-gone-wrong_6mrd9trb_480x.progressive.jpg?v=1637342410"
             alt=""
           />
-          <h5 class="movie_item_name">Movie Name</h5>
+          <h6 class="movie_item_name my-2">Movie Name</h6>
           <div class="genres">
             <span class="genre">Action</span>
             <span class="genre">Crime</span>
             <span class="genre">Drama</span>
           </div>
         </div>
-        <div class="movie_item">
+        <div class="movie_item col-6 col-md-4 col-lg-3 col-xl-2">
           <img
             class="movie_item_image"
             src="https://cdn.shopify.com/s/files/1/0057/3728/3618/products/paws-of-fury-the-legend-of-hank_xesf8ont_480x.progressive.jpg?v=1651767929"
             alt=""
           />
-          <h5 class="movie_item_name">Movie Name</h5>
+          <h6 class="movie_item_name my-2">Movie Name</h6>
           <div class="genres">
             <span class="genre">Action</span>
             <span class="genre">Crime</span>
@@ -146,20 +191,222 @@
         </div>
       </div>
     </section>
+    <!-- <img src="./assets/blurbg.png" class="bg" alt="" /> -->
+    <section class="login-backdrop">
+      <div
+        class="login-form d-flex gy-4 flex-column col-10 col-md-7 col-xl-4 px-3 px-md-4 px-lg-4 px-xl-5"
+      >
+        <div class="close text-end">
+          <i class="fa-solid fa-xmark close-btn"></i>
+        </div>
+        <h1>Login</h1>
+        <div class="email d-flex flex-column">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            placeholder="someone@example.com"
+            class="email-input"
+          />
+        </div>
+        <div class="password d-flex flex-column">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            name="password"
+            placeholder="........"
+            class="password-input"
+          />
+        </div>
+        <div class="remember-me">
+          <input type="checkbox" name="checkbox" />
+          <label for="checkbox">Remember Me</label>
+        </div>
+        <button class="login-from-btn">Login</button>
+        <button class="signup-from-btn btn btn-link">
+          Not Registered Yet! Signup Now!
+        </button>
+      </div>
+    </section>
+    <section class="coming_month mt-5 container">
+      <h5 class="coming_header">Releasing Soon</h5>
+      <div class="soon_items row d-flex">
+        
+        <div class="soon_item d-flex p-4 col-12 col-lg-6">
+          <div class="soon_image col-4">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0057/3728/3618/products/rons-gone-wrong_6mrd9trb_480x.progressive.jpg?v=1637342410"
+              alt=""
+              class="soon_item_image"
+            />
+
+          </div>
+          <div class="soon_item_info px-3">
+            <h4 class="mb-3">Avatar: The way of water</h4>
+          <div class="detail-desc mb-3">
+            <h6>Description</h6>
+            <p class="span-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam et natus labore perspiciatis cumque ipsum omnis odio. Vero consectetur maxime, laborum tecto facilis deleniti, repellat doloribus earum a? Veritatis, unde?</p>
+          </div>
+          <div class="row-fluid d-flex justify-content-between">
+            <h6>Duration:
+              <span class="span-text">160 min</span>
+            </h6>
+            <h6>Release Date:
+              <span class="span-text">xxth xx, xxxxxA.D.</span>
+            </h6>
+          </div>
+            <h6>Casts:<span class="actor-name">
+              <span class="span-text">Actor 1</span>
+              <span class="span-text">Actor 2</span>
+              <span class="span-text">Actor 3</span>
+            </h6>
+          <h6>Director:
+            <span class="span-text">Cristopher Nolan</span>
+          </h6>
+          </div>
+        </div>
+        <div class="soon_item d-flex p-4 col-12 col-lg-6">
+          <div class="soon_image col-4">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0057/3728/3618/products/rons-gone-wrong_6mrd9trb_480x.progressive.jpg?v=1637342410"
+              alt=""
+              class="soon_item_image"
+            />
+
+          </div>
+          <div class="soon_item_info px-3">
+            <h4 class="mb-3">Avatar: The way of water</h4>
+          <div class="detail-desc mb-3">
+            <h6>Description</h6>
+            <p class="span-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam et natus labore perspiciatis cumque ipsum omnis odio. Vero consectetur maxime, laborum tecto facilis deleniti, repellat doloribus earum a? Veritatis, unde?</p>
+          </div>
+          <div class="row-fluid d-flex justify-content-between">
+            <h6>Duration:
+              <span class="span-text">160 min</span>
+            </h6>
+            <h6>Release Date:
+              <span class="span-text">xxth xx, xxxxxA.D.</span>
+            </h6>
+          </div>
+            <h6>Casts:<span class="actor-name">
+              <span class="span-text">Actor 1</span>
+              <span class="span-text">Actor 2</span>
+              <span class="span-text">Actor 3</span>
+            </h6>
+          <h6>Director:
+            <span class="span-text">Cristopher Nolan</span>
+          </h6>
+          </div>
+        </div>
+        <div class="soon_item d-flex p-4 col-12 col-lg-6">
+          <div class="soon_image col-4">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0057/3728/3618/products/rons-gone-wrong_6mrd9trb_480x.progressive.jpg?v=1637342410"
+              alt=""
+              class="soon_item_image"
+            />
+
+          </div>
+          <div class="soon_item_info px-3">
+            <h4 class="mb-3">Avatar: The way of water</h4>
+          <div class="detail-desc mb-3">
+            <h6>Description</h6>
+            <p class="span-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam et natus labore perspiciatis cumque ipsum omnis odio. Vero consectetur maxime, laborum tecto facilis deleniti, repellat doloribus earum a? Veritatis, unde?</p>
+          </div>
+          <div class="row-fluid d-flex justify-content-between">
+            <h6>Duration:
+              <span class="span-text">160 min</span>
+            </h6>
+            <h6>Release Date:
+              <span class="span-text">xxth xx, xxxxxA.D.</span>
+            </h6>
+          </div>
+            <h6>Casts:<span class="actor-name">
+              <span class="span-text">Actor 1</span>
+              <span class="span-text">Actor 2</span>
+              <span class="span-text">Actor 3</span>
+            </h6>
+          <h6>Director:
+            <span class="span-text">Cristopher Nolan</span>
+          </h6>
+          </div>
+        </div>
+        <div class="soon_item d-flex p-4 col-12 col-lg-6">
+          <div class="soon_image col-4">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0057/3728/3618/products/rons-gone-wrong_6mrd9trb_480x.progressive.jpg?v=1637342410"
+              alt=""
+              class="soon_item_image"
+            />
+
+          </div>
+          <div class="soon_item_info px-3">
+            <h4 class="mb-3">Avatar: The way of water</h4>
+          <div class="detail-desc mb-3">
+            <h6>Description</h6>
+            <p class="span-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam et natus labore perspiciatis cumque ipsum omnis odio. Vero consectetur maxime, laborum tecto facilis deleniti, repellat doloribus earum a? Veritatis, unde?</p>
+          </div>
+          <div class="row-fluid d-flex justify-content-between">
+            <h6>Duration:
+              <span class="span-text">160 min</span>
+            </h6>
+            <h6>Release Date:
+              <span class="span-text">xxth xx, xxxxxA.D.</span>
+            </h6>
+          </div>
+            <h6>Casts:<span class="actor-name">
+              <span class="span-text">Actor 1</span>
+              <span class="span-text">Actor 2</span>
+              <span class="span-text">Actor 3</span>
+            </h6>
+          <h6>Director:
+            <span class="span-text">Cristopher Nolan</span>
+          </h6>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- JavaScript -->
+    <script src="./assets/index.js"></script>
+
+    <!-- jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        autoplay: {
+          delay: 3000,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+      $(document).ready(function () {});
+
+      $(".login_btn").click(function () {
+        $(".login-backdrop").css("display", "flex");
+        $(".login-backdrop").show(300, callback);
+      });
+
+      $(".movie_item").click(function () {
+        alert("clicked");
+        window.location.href = "./movieDetails.html";
+      });
+
+      $(".close-btn").click(function () {
+        $(".login-backdrop").hide(100);
+      });
+    </script>
     <!-- bootstrap -->
     <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
   </body>
