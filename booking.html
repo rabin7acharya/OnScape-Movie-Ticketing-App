@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Booking Page</title>
 
+    <link rel="stylesheet" href="./assets/booking.css" />
+    <link rel="stylesheet" href="./assets/style.css" />
+
     <!-- Font Awesome -->
     <link
       rel="stylesheet"
@@ -23,7 +26,186 @@
     />
   </head>
   <body>
-    <h1>Booking</h1>
+    <nav class="nav_bar py-2 d-flex col-12 justify-content-between">
+      <div class="container d-flex justify-content-between align-items-center">
+        <a href="./index.html">
+          <img src="./assets/logo.svg" alt="" class="logo" />
+        </a>
+        <div class="search_bar rounded d-none d-sm-none d-md-none d-lg-block">
+          <input
+            class="search_input px-3"
+            type="text"
+            name="search"
+            placeholder="Type to search"
+          />
+          <i class="fa-solid p-2 search_icon fa-magnifying-glass"></i>
+        </div>
+
+        <div class="login-singup d-none d-sm-none d-md-none d-lg-block">
+          <button class="login_btn btn">Login</button>
+          <button class="signup_btn btn">Signup</button>
+        </div>
+        <i class="ham fa-solid fa-bars d-sm-block d-md-block d-lg-none"></i>
+      </div>
+    </nav>
+    <section class="booking mt-5 py-3">
+      <!-- <h1>Booking</h1> -->
+      <div class="container">
+        <div class="row d-flex justify-content-center align-items-center">
+          <div
+            class="detail-left col-8 col-md-5 col-lg-4 col-xl-3 justify-content-center"
+          >
+            <p class="span-text m-1 p-0">Select Date and Time</p>
+            <img
+              src="https://cdn.shopify.com/s/files/1/0057/3728/3618/products/rons-gone-wrong_6mrd9trb_480x.progressive.jpg?v=1637342410"
+              width="100%"
+              alt=""
+            />
+          </div>
+          <div class="detail-right py-4 col-12 col-md-7 col-lg-5">
+            <h2 class="mb-3">Avatar: The way of water</h2>
+            <div class="detail-date mb-3 col-12">
+              <h6>Select Date</h6>
+              <div class="group col-12">
+                <button class="date-booking-btn btn btn-primary">Today</button>
+                <button class="date-booking-btn btn btn-primary">
+                  20th July
+                </button>
+                <button class="date-booking-btn btn btn-primary">
+                  21st July
+                </button>
+                <button class="date-booking-btn btn btn-primary">
+                  22nd July
+                </button>
+              </div>
+            </div>
+            <div class="detail-time mb-3 col-12">
+              <h6>Choose Time</h6>
+              <div class="group col-12">
+                <button class="time-booking-btn btn btn-warning">
+                  8:00 AM
+                </button>
+                <button class="time-booking-btn btn btn-warning">
+                  12:00 AM
+                </button>
+                <button class="time-booking-btn btn btn-warning">
+                  4:00 PM
+                </button>
+                <button class="time-booking-btn btn btn-warning">
+                  8:00 Pm
+                </button>
+              </div>
+            </div>
+            <div class="dropdown col-12">
+              <h6>Select Screen</h6>
+              <button
+                class="btn btn-secondary dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Dropdown button
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </div>
+            <button
+              class="book-now-btn btn-primary btn-lg col-12 col-sm-8 col-md-8 col-lg-8 mt-4"
+            >
+              Proceed to seat Selection
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="coming_week mt-5 container">
+      <h5 class="coming_header">Coming This Week</h5>
+      <div class="coming_items row mt-4">
+        <div class="movie_item col-6 col-md-4 col-lg-3 col-xl-2">
+          <img
+            class="movie_item_image"
+            src="https://cdn.shopify.com/s/files/1/0057/3728/3618/products/newmutants.aug28.ar_480x.progressive.jpg?v=1598649867"
+            alt=""
+          />
+          <h5 class="movie_item_name">Movie Name</h5>
+          <div class="genres">
+            <span class="genre">Action</span>
+            <span class="genre">Crime</span>
+            <span class="genre">Drama</span>
+          </div>
+        </div>
+        <div class="movie_item col-6 col-md-4 col-lg-3 col-xl-2">
+          <img
+            class="movie_item_image"
+            src="https://cdn.shopify.com/s/files/1/0057/3728/3618/products/rons-gone-wrong_6mrd9trb_480x.progressive.jpg?v=1637342410"
+            alt=""
+          />
+          <h5 class="movie_item_name">Movie Name</h5>
+          <div class="genres">
+            <span class="genre">Action</span>
+            <span class="genre">Crime</span>
+            <span class="genre">Drama</span>
+          </div>
+        </div>
+        <div class="movie_item col-6 col-md-4 col-lg-3 col-xl-2">
+          <img
+            class="movie_item_image"
+            src="https://cdn.shopify.com/s/files/1/0057/3728/3618/products/paws-of-fury-the-legend-of-hank_xesf8ont_480x.progressive.jpg?v=1651767929"
+            alt=""
+          />
+          <h5 class="movie_item_name">Movie Name</h5>
+          <div class="genres">
+            <span class="genre">Action</span>
+            <span class="genre">Crime</span>
+            <span class="genre">Drama</span>
+          </div>
+        </div>
+        <div class="movie_item col-6 col-md-4 col-lg-3 col-xl-2">
+          <img
+            class="movie_item_image"
+            src="https://cdn.shopify.com/s/files/1/0057/3728/3618/products/newmutants.aug28.ar_480x.progressive.jpg?v=1598649867"
+            alt=""
+          />
+          <h5 class="movie_item_name">Movie Name</h5>
+          <div class="genres">
+            <span class="genre">Action</span>
+            <span class="genre">Crime</span>
+            <span class="genre">Drama</span>
+          </div>
+        </div>
+        <div class="movie_item col-6 col-md-4 col-lg-3 col-xl-2">
+          <img
+            class="movie_item_image"
+            src="https://cdn.shopify.com/s/files/1/0057/3728/3618/products/rons-gone-wrong_6mrd9trb_480x.progressive.jpg?v=1637342410"
+            alt=""
+          />
+          <h5 class="movie_item_name">Movie Name</h5>
+          <div class="genres">
+            <span class="genre">Action</span>
+            <span class="genre">Crime</span>
+            <span class="genre">Drama</span>
+          </div>
+        </div>
+        <div class="movie_item col-6 col-md-4 col-lg-3 col-xl-2">
+          <img
+            class="movie_item_image"
+            src="https://cdn.shopify.com/s/files/1/0057/3728/3618/products/paws-of-fury-the-legend-of-hank_xesf8ont_480x.progressive.jpg?v=1651767929"
+            alt=""
+          />
+          <h5 class="movie_item_name">Movie Name</h5>
+          <div class="genres">
+            <span class="genre">Action</span>
+            <span class="genre">Crime</span>
+            <span class="genre">Drama</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- bootstrap -->
     <script
@@ -38,5 +220,42 @@
       integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      $(".date-booking-btn, .time-booking-btn").click((e) => {
+        $(e.target).css("opacity", "100%");
+        $(e.target).siblings().css("opacity", "30%");
+      });
+
+      // $(".date-booking-btn").click(() => {
+      //   $(`<div class="detail-time mb-3 col-12">
+      //       <h6>Choose Time</h6>
+      //       <div class="group col-12">
+      //           <button class="time-booking-btn btn btn-primary" id="t-btn">
+      //               8:00 AM
+      //           </button>
+      //           <button class="time-booking-btn btn btn-primary" id="t-btn">
+      //               12:00 AM
+      //           </button>
+      //           <button class="time-booking-btn btn btn-primary" id="t-btn">
+      //               4:00 PM
+      //           </button>
+      //           <button class="time-booking-btn btn btn-primary" id="t-btn">
+      //               8:00 Pm
+      //           </button>
+      //       </div>
+      //   </div>`).insertAfter(".detail-date");
+      // });
+
+      // $(".time-booking-btn").click(function () {
+      //   alert("yo");
+      //   $(`
+      //       <button
+      //         class="book-now-btn btn-primary btn-lg col-12 col-sm-8 col-md-8 col-lg-8 mt-4"
+      //       >
+      //         Proceed to seat Selection
+      //       </button>`).insertAfter(".detail-time");
+      // });
+    </script>
   </body>
 </html>
