@@ -5,11 +5,42 @@
 
 body {
   background-color: #222831 !important;
-  color: #eeeeee !important;
+  /* color: #eeeeee !important; */
 }
 
+.selectors {
+  color: #00adb5;
+}
 
+.date-booking-btn,
+.time-booking-btn {
+  border: 1px solid #00adb5 !important;
+  color: #00adb5;
+  background-color: transparent;
+}
 
+.span-text {
+  color: #00adb5;
+}
+
+h2 {
+  color: #eeeeee;
+}
+
+.seat-select-btn {
+  background-color: #00adb5 !important;
+  border: none;
+  color: #222831 !important;
+}
+
+.dropdown-screen {
+  border: 1px solid #00adb5 !important;
+  color: #00adb5 !important;
+}
+
+.dropdown-item {
+  cursor: pointer;
+}
 /* #222831 super dark
 #393e46 dark 
 #00adb5 sky blue

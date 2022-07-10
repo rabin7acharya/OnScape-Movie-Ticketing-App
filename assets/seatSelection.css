@@ -1,0 +1,32 @@
+body {
+  color: #eee !important;
+}
+
+.seat-wrapper {
+  display: block;
+  color: #eee;
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0.5rem;
+  justify-content: center;
+  align-content: center;
+  /* grid-template-rows: (10, 1fr); */
+}
+
+.seats {
+  width: 100%;
+}
+
+.fa-couch {
+  font-size: 1.2rem;
+  /* padding: 0 !important; */
+}
+
+.seat-alpha {
+  color: #858b94;
+}
+
+.monitor {
+  border-radius: 100px 100px 0px 0px;
+}

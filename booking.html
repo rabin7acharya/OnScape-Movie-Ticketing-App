@@ -64,61 +64,55 @@
           </div>
           <div class="detail-right py-4 col-12 col-md-7 col-lg-5">
             <h2 class="mb-3">Avatar: The way of water</h2>
-            <div class="detail-date mb-3 col-12">
-              <h6>Select Date</h6>
-              <div class="group col-12">
-                <button class="date-booking-btn btn btn-primary">Today</button>
-                <button class="date-booking-btn btn btn-primary">
-                  20th July
-                </button>
-                <button class="date-booking-btn btn btn-primary">
-                  21st July
-                </button>
-                <button class="date-booking-btn btn btn-primary">
-                  22nd July
-                </button>
+            <div class="selectors">
+              <div class="detail-date mb-4 col-12">
+                <p class="mb-2">Select Date</p>
+                <div class="group col-12">
+                  <button class="date-booking-btn p-2 rounded">Today</button>
+                  <button class="date-booking-btn p-2 rounded">
+                    20th July
+                  </button>
+                  <button class="date-booking-btn p-2 rounded">
+                    21st July
+                  </button>
+                  <button class="date-booking-btn p-2 rounded">
+                    22nd July
+                  </button>
+                </div>
+              </div>
+              <div class="detail-time mb-4 col-12">
+                <p class="mb-2">Choose Time</p>
+                <div class="group col-12">
+                  <button class="time-booking-btn p-2 rounded">8:00 AM</button>
+                  <button class="time-booking-btn p-2 rounded">12:00 AM</button>
+                  <button class="time-booking-btn p-2 rounded">4:00 PM</button>
+                  <button class="time-booking-btn p-2 rounded">8:00 PM</button>
+                </div>
               </div>
             </div>
-            <div class="detail-time mb-3 col-12">
-              <h6>Choose Time</h6>
-              <div class="group col-12">
-                <button class="time-booking-btn btn btn-warning">
-                  8:00 AM
-                </button>
-                <button class="time-booking-btn btn btn-warning">
-                  12:00 AM
-                </button>
-                <button class="time-booking-btn btn btn-warning">
-                  4:00 PM
-                </button>
-                <button class="time-booking-btn btn btn-warning">
-                  8:00 Pm
-                </button>
-              </div>
-            </div>
-            <div class="dropdown col-12">
-              <h6>Select Screen</h6>
+            <div class="dropdown mb-2">
+              <p class="span-text mb-2">Select Screen</p>
               <button
-                class="btn btn-secondary dropdown-toggle"
+                class="btn dropdown-screen dropdown-toggle"
                 type="button"
-                id="dropdownMenuButton"
-                data-toggle="dropdown"
-                aria-haspopup="true"
+                id="dropdownMenuButton1"
+                data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Dropdown button
+                Select Screen
               </button>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li class="dropdown-item" href="#">East Screen</li>
+                <li class="dropdown-item" href="#">West Screen</li>
+                <li class="dropdown-item" href="#">West Screen II</li>
+              </ul>
             </div>
-            <button
-              class="book-now-btn btn-primary btn-lg col-12 col-sm-8 col-md-8 col-lg-8 mt-4"
+            <a
+              href="./seatSelection.html"
+              class="seat-select-btn btn rounded p-2 col-12 col-sm-8 col-md-8 col-lg-8 mt-4 font"
             >
-              Proceed to seat Selection
-            </button>
+              Proceed to Seat Selection
+            </a>
           </div>
         </div>
       </div>
@@ -224,7 +218,11 @@
     <script>
       $(".date-booking-btn, .time-booking-btn").click((e) => {
         $(e.target).css("opacity", "100%");
-        $(e.target).siblings().css("opacity", "30%");
+        $(e.target).css("background-color", "#00adb5");
+        $(e.target).css("color", "#222831");
+        $(e.target).siblings().css("opacity", "50%");
+        $(e.target).siblings().css("background-color", "transparent");
+        $(e.target).siblings().css("color", "00adb5");
       });
 
       // $(".date-booking-btn").click(() => {
