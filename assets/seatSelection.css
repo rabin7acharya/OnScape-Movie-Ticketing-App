@@ -5,13 +5,18 @@ body {
 .seat-wrapper {
   display: block;
   color: #eee;
-  display: grid;
   width: 100%;
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  gap: 0.5rem;
+  gap: 1rem;
   justify-content: center;
   align-content: center;
   /* grid-template-rows: (10, 1fr); */
+}
+
+.monitor {
+  background-color: #393e46;
+  color: #858b94;
 }
 
 .seats {
@@ -20,11 +25,19 @@ body {
 
 .fa-couch {
   font-size: 1.2rem;
+  color: #00adb5;
+  line-height: 1.5 !important;
+
   /* padding: 0 !important; */
 }
 
-.seat-alpha {
-  color: #858b94;
+.sold {
+  color: #393e46;
+}
+
+.selected {
+  color: #eeeeee;
+  /* border: 2px solid #cacaff; */
 }
 
 .monitor {
@@ -32,5 +45,20 @@ body {
 }
 
 .right {
-  background-color: #393e46;
+  /* background-color: #393e46; */
 }
+
+.book-now-btn {
+  background-color: #00adb5 !important;
+}
+
+.back {
+  background-color: #393e46 !important;
+  color: #00adb5 !important;
+}
+
+/* #222831 super dark
+#393e46 dark 
+#00adb5 sky blue
+eeeeee white
+*/

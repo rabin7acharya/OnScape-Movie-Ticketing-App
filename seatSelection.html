@@ -26,20 +26,23 @@
     />
   </head>
   <body>
+    <div class="row-fluid back-wrapper fixed-top">
+      <div class="container">
+        <a class="btn back">Back</a>
+    </div>
+
+    </div>
     <section class="seat-selection mt-5">
       <div class="container">
-        <div class="row d-flex">
-          <div
-            class="left d-flex flex-column align-items-center col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8"
+        <div class="row d-flex align-items-start">
+          <div class="left d-flex flex-column align-items-center col-12 col-sm-12 col-md-12 col-lg-7 col-xl-7"
           >
-            <!-- <h6>Select Seats</h6> -->
             <div
-              class="monitor py-1 mb-4 bg-warning text-center text-dark"
-              style="width: 100%"
+              class="monitor py-1 mb-4 text-center text-dark col-8"
             >
-              Screen
+              <p class="p-0 m-0 span-text">Screen</p>
             </div>
-            <div class="seats d-flex justify-content-center">
+            <div class="seats mt-2 d-flex justify-content-center">
               <div class="seat-wrapper">
                 <i class="fa-solid fa-couch"></i>
                 <i class="fa-solid fa-couch"></i>
@@ -101,6 +104,12 @@
                 <i class="fa-solid fa-couch"></i>
                 <i class="fa-solid fa-couch"></i>
                 <i class="fa-solid fa-couch"></i>
+                <i class="fa-solid selected fa-couch"></i>
+                <i class="fa-solid selected fa-couch"></i>
+                <i class="fa-solid selected fa-couch"></i>
+                <i class="fa-solid selected fa-couch"></i>
+                <i class="fa-solid selected fa-couch"></i>
+                <i class="fa-solid selected fa-couch"></i>
                 <i class="fa-solid fa-couch"></i>
                 <i class="fa-solid fa-couch"></i>
                 <i class="fa-solid fa-couch"></i>
@@ -137,18 +146,12 @@
                 <i class="fa-solid fa-couch"></i>
                 <i class="fa-solid fa-couch"></i>
                 <i class="fa-solid fa-couch"></i>
-                <i class="fa-solid fa-couch"></i>
-                <i class="fa-solid fa-couch"></i>
-                <i class="fa-solid fa-couch"></i>
-                <i class="fa-solid fa-couch"></i>
-                <i class="fa-solid fa-couch"></i>
-                <i class="fa-solid fa-couch"></i>
-                <i class="fa-solid fa-couch"></i>
-                <i class="fa-solid fa-couch"></i>
-                <i class="fa-solid fa-couch"></i>
-                <i class="fa-solid fa-couch"></i>
-                <i class="fa-solid fa-couch"></i>
-                <i class="fa-solid fa-couch"></i>
+                <i class="fa-solid sold fa-couch"></i>
+                <i class="fa-solid sold fa-couch"></i>
+                <i class="fa-solid sold fa-couch"></i>
+                <i class="fa-solid sold fa-couch"></i>
+                <i class="fa-solid sold fa-couch"></i>
+                <i class="fa-solid sold fa-couch"></i>
                 <i class="fa-solid fa-couch"></i>
                 <i class="fa-solid fa-couch"></i>
                 <i class="fa-solid fa-couch"></i>
@@ -162,9 +165,25 @@
                 <i class="fa-solid fa-couch"></i>
                 <i class="fa-solid fa-couch"></i>
               </div>
+              
+            </div>
+            <div class="index mt-4 d-flex gap-4 p-2">
+              <div class="d-flex p-0 m-0">
+                <i class="fa-solid fa-couch"></i>
+                <p class="span-text mx-2">Available</p>
+              </div>
+              <div class="d-flex p-0 m-0">
+                <i class="fa-solid selected fa-couch"></i>
+                <p class="span-text mx-2">Selected</p>
+              </div>
+              <div class="d-flex p-0 m-0">
+                <i class="fa-solid sold fa-couch"></i>
+                <p class="span-text mx-2">Sold</p>
+              </div>
+
             </div>
           </div>
-          <div class="right col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 my-5 py-3">
+          <div class="right rounded col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 my-5 py-3">
             <h6 class="pt-2 px-2">Booking Summary</h6>
             <div class="order-summary rounded p-2">
               <h2 class="mb-3">Avatar: The way of water</h2>
@@ -175,12 +194,12 @@
               <span class="span-text">F3</span>
             </h6>
           </div>
-          <h6>Screen:
-            <span class="span-text">OnScape West Screen</span>
-          </h6>
-          <h6>Show Date:
+          <h6 class="mb-3">Show Date:
             <span class="span-text">20th July,</span>
             <span class="span-text">8:00 PM</span>
+          </h6>
+          <h6>Screen:
+            <span class="span-text">OnScape West Screen</span>
           </h6>
           <hr>
             
@@ -189,7 +208,7 @@
           </h3>
           
         </div>
-        <button class="book-now-btn btn btn-primary btn-lg col-12 col-sm-8 col-md-7 col-lg-4">Book Now</button>
+        <button class="book-now-btn btn btn-lg mt-3 col-12 col-sm-8 col-md-8 col-lg-12 col-xl-12">Proceed to Payment</button>
       </div>
         </div>
       </div>
