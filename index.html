@@ -194,35 +194,31 @@
     <!-- <img src="./assets/blurbg.png" class="bg" alt="" /> -->
     <section class="login-backdrop">
       <div
-        class="login-form d-flex gy-4 flex-column col-10 col-md-7 col-xl-4 px-3 px-md-4 px-lg-4 px-xl-5"
+        class="login-form rounded d-flex gy-4 flex-column col-10 col-md-7 col-xl-4 px-3 px-md-4 px-lg-4 px-xl-5"
       >
         <div class="close text-end">
           <i class="fa-solid fa-xmark close-btn"></i>
         </div>
-        <h1>Login</h1>
-        <div class="email d-flex flex-column">
-          <label for="email">Email</label>
-          <input
-            type="email"
-            name="email"
-            placeholder="someone@example.com"
-            class="email-input"
-          />
+        <h4 class="mb-4">Login</h4>
+        <div class="form-group email mb-4">
+          <label for="exampleInputEmail1" class="form-text text-muted">Email address</label>
+          <input type="email" class="form-control form-control-lg" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
         </div>
-        <div class="password d-flex flex-column">
-          <label for="password">Password</label>
-          <input
-            type="password"
-            name="password"
-            placeholder="........"
-            class="password-input"
-          />
+        <div class="form-group password mb-2">
+          <label for="exampleInputPassword1" class="form-text text-muted">Password</label>
+          <input type="password" class="form-control form-control-lg" id="exampleInputPassword1" placeholder="Password">
         </div>
-        <div class="remember-me">
-          <input type="checkbox" name="checkbox" />
-          <label for="checkbox">Remember Me</label>
+        <div class="remember-me form-check mb-4">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+          <div class="wrap-text row-fluid d-flex align-items-center justify-content-between">
+            <label class="form-check-label text-muted" for="defaultCheck1">
+              Remember Me
+            </label>
+            <a href="" class="forget">Forget Password?</a>
+          </div>
         </div>
-        <button class="login-from-btn">Login</button>
+        <button class="login-from-btn btn btn-lg my-4">Login</button>
         <button class="signup-from-btn btn btn-link">
           Not Registered Yet! Signup Now!
         </button>

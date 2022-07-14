@@ -21,6 +21,7 @@ body {
 
 .seats {
   width: 100%;
+  
 }
 
 .fa-couch {
@@ -44,8 +45,9 @@ body {
   border-radius: 100px 100px 0px 0px;
 }
 
-.right {
+.left {
   /* background-color: #393e46; */
+  /* position: relative; */
 }
 
 .book-now-btn {
@@ -55,6 +57,10 @@ body {
 .back {
   background-color: #393e46 !important;
   color: #00adb5 !important;
+}
+
+.screen-img {
+  margin-bottom: -16rem;
 }
 
 /* #222831 super dark
