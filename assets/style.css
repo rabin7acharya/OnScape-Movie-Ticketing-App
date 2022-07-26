@@ -68,7 +68,8 @@ body {
   display: flex;
 }
 
-.login-from-btn {
+.login-form-btn,
+.sign-form-btn {
   background-color: #00adb5 !important;
   color: #eeeeee;
 }
@@ -77,7 +78,8 @@ body {
   background-color: #393e46 !important;
 }
 
-.signup-from-btn,
+.signup-form-link,
+.login-form-link,
 .forget {
   color: #00adb5 !important;
 }
@@ -219,12 +221,22 @@ body {
   padding: 0.5rem 1rem;
 }
 
-.login-from-btn {
+.sign-email,
+.sign-password,
+.sign-repassword {
+  display: none;
+}
+
+.signup-buttons {
+  display: none;
+}
+/* .login-from-btn,
+.sign-form-btn {
   padding: 0.3rem 1rem;
   border: none;
   background-color: #00adb5;
   color: #eeeeee;
-}
+} */
 
 .login-from-btn:hover {
   background-color: #eeeeee;

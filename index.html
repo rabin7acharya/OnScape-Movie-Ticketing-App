@@ -194,21 +194,42 @@
     <!-- <img src="./assets/blurbg.png" class="bg" alt="" /> -->
     <section class="login-backdrop">
       <div
-        class="login-form rounded d-flex gy-4 flex-column col-10 col-md-7 col-xl-4 px-3 px-md-4 px-lg-4 px-xl-5"
-      >
+        class="login-form rounded d-flex gy-4 flex-column col-10 col-md-7 col-xl-4 px-3 px-md-4 px-lg-4 px-xl-5">
         <div class="close text-end">
           <i class="fa-solid fa-xmark close-btn"></i>
         </div>
-        <h4 class="mb-4">Login</h4>
-        <div class="form-group email mb-4">
+        <h4 class="mb-4 login-text">Login</h4>
+
+        <!-- for login -->
+        <div class="form-group login-email mb-4">
           <label for="exampleInputEmail1" class="form-text text-muted">Email address</label>
           <input type="email" class="form-control form-control-lg" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          
+          <!-- for signup -->
+        </div>
+        <div class="form-group sign-email mb-4">
+          <label for="exampleInputEmail1" class="form-text text-muted">Email address</label>
+          <input type="email" class="form-control form-control-lg" id="sign-InputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
           <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
         </div>
-        <div class="form-group password mb-2">
+
+        <!-- for login  -->
+        <div class="form-group login-password mb-2">
           <label for="exampleInputPassword1" class="form-text text-muted">Password</label>
           <input type="password" class="form-control form-control-lg" id="exampleInputPassword1" placeholder="Password">
         </div>
+
+        <!-- for signup  -->
+        <div class="form-group sign-password mb-4">
+          <label for="exampleInputPassword1" class="form-text text-muted">Password</label>
+          <input type="password" class="form-control form-control-lg" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        <div class="form-group sign-repassword mb-2">
+          <label for="exampleInputPassword1" class="form-text text-muted">Re-enter Password</label>
+          <input type="password" class="form-control form-control-lg" id="exampleInputPassword1" placeholder="Re-enter Password">
+        </div> 
+
+        <!-- remember/forget me -->
         <div class="remember-me form-check mb-4">
           <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
           <div class="wrap-text row-fluid d-flex align-items-center justify-content-between">
@@ -218,10 +239,24 @@
             <a href="" class="forget">Forget Password?</a>
           </div>
         </div>
-        <button class="login-from-btn btn btn-lg my-4">Login</button>
-        <button class="signup-from-btn btn btn-link">
-          Not Registered Yet! Signup Now!
-        </button>
+
+        <!-- login  -->
+        <div class="login-buttons">
+          <button class="login-form-btn btn btn-lg my-4 col-12">Login</button>
+          <button class="signup-form-link btn btn-link col-12">
+            Not Registered Yet! Signup Now!
+          </button>
+
+        </div>
+
+        <!-- signup  -->
+        <div class="signup-buttons">
+          <button class="sign-form-btn btn btn-lg my-4 col-12">Signup</button>
+          <button class="login-form-link btn btn-link col-12">
+            Already a member! Login Now!
+          </button>
+
+        </div>
       </div>
     </section>
     <section class="coming_month mt-5 container">
@@ -387,7 +422,7 @@
 
       $(".login_btn").click(function () {
         $(".login-backdrop").css("display", "flex");
-        $(".login-backdrop").show(300, callback);
+        $(".login-backdrop").show(300);
       });
 
       $(".movie_item").click(function () {
@@ -398,6 +433,39 @@
       $(".close-btn").click(function () {
         $(".login-backdrop").hide(100);
       });
+
+      $(".signup-form-link").click(function (e) {
+        $(".login-text").text("Sign Up");
+        $(".login-email").hide();
+        $(".login-password").hide();
+        $(".forget").hide();
+        $(".login-buttons").hide();
+        
+        $(".sign-password").show();
+        $(".sign-repassword").show();
+        $(".sign-email").show();
+        $('.signup-buttons').show();	
+      });
+
+      $(".login-form-link").click(function (e) {
+        $(".login-text").text("Login");
+        $(".sign-password").hide();
+        $(".sign-repassword").hide();
+        $(".sign-email").hide();
+        $('.signup-buttons').hide();	
+        $(".login-email").show();
+        $(".login-password").show();
+        $(".forget").show();
+        $(".login-buttons").show();
+      });
+
+
+      /*
+      .sign-email,
+      .sign-password
+      .sign-form-btn,
+      .signup-form-link
+        */
     </script>
     <!-- bootstrap -->
     <script
